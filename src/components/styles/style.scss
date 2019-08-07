@@ -1,0 +1,179 @@
+
+@import '~mapbox-gl/dist/mapbox-gl.css';
+
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap" rel="stylesheet');
+$title: 'Poiret One', cursive;
+$text: 'Poiret One', cursive;
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+.fullPage {
+  height: 100vh;
+}
+.sectionOne {
+  background-image: url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.sectionTwo {
+  background-color:rgb(255, 247, 230)
+;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sectionThree {
+  // background-color: rgb(255, 247, 230);
+  background-color: red;
+  height: auto;
+}
+
+.sectionFour {
+  padding-top: 50px;
+  background-color: rgb(255, 247, 230);
+  height: 100vh;
+}
+
+.sectionFive {
+  border-top: black;
+  background-color: rgb(255, 247, 230);
+  height: 100vh;
+}
+
+.cardsImage {
+  height: 150px;
+}
+
+.card-body {
+  height: 216px;
+  overflow: scroll;
+  height: 130px;
+}
+
+.titel {
+  color: rgb(255, 247, 230);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap-reverse;
+  margin-right: 70px;
+  margin-bottom: 4.5rem;
+  font-weight: 500;
+  line-height: -15.8;
+  justify-content: flex-end;
+  padding-right: 150px;
+  font-size: 65px;
+}
+
+.map {
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+  border: black;
+  padding-top: 40px;
+}
+
+.marker {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-center {
+  height: 80vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.singleCard {
+  background: none;
+  border-color: black;
+  // margin-left: 60px;
+  margin: auto;
+  text-align: center;
+  // margin-top: 30px;
+  margin-top: 60px;
+
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+.address {
+  background: none;
+  border-color: black;
+}
+
+.newPlace {
+  margin-right: 30px;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.paginationNumber {
+  text-decoration: none;
+}
+
+.radios {
+  width: 190px;
+}
+
+.btn-primary {
+  background: none;
+}
+
+.form-control  {
+  border-color: black;
+}
+
+.registerForm {
+  background-color: rgb(255, 247, 230);
+  height: 100vh;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.loginPage {
+  background-color: rgb(255, 247, 230);
+  height: 100vh;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.footer.card {
+  background-color:rgb(255, 247, 230);
+  height: 120px;
+  padding-bottom: 10px;
+}
+
+.form-control {
+  border: 1px solid black;
+
+}
