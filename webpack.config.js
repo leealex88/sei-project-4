@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/App.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve('dist'),
