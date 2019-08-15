@@ -52,15 +52,12 @@ class Homepage extends React.Component {
           <NavbarMain />
           <h1 className="titel">Quiet Place</h1>
         </section>
-
         <section className="sectionTwo">
           <PlacesIndex
             places={this.state.qplaces}
             setCurrentPlace={this.setCurrentPlace}
           />
-
         </section>
-
         {this.state.currentPlaceId &&
           <ScrollableAnchor id="sectionThree">
             <section className="sectionThree">
