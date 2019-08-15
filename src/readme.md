@@ -166,9 +166,14 @@ class Qplace(db.Model, BaseModel):
 
 <img src="src/assets/form.png" width="900">
 
+## Future improvements
 
-As an improvement, I would like to add a comments wall for each location and a chat to improve the user experience.
 
-add search box
+This was the first time we experienced working solo, to build fully-functioning full-stack application.
 
-add login and register
+
+In terms of future improvements, I would like to add a search form  which is going to allow the user to perform a much more detailed search and display the places that meet the criteria of the user.
+
+I would like to add also a authorisation for the whole page, to see the content the user has to register/login.
+
+I would like to add a comments wall for each place to improve the user experience.
