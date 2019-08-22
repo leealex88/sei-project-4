@@ -141,12 +141,13 @@ In the fourth section we can see Map with the markers for each of the Place, whe
 <img src="src/assets/map.png" width="900">
 
 Last section contain the New Place Form:
+```
 
 class Qplace(db.Model, BaseModel):
 
     __tablename__ = 'qplaces'
 
-```
+
     name = db.Column(db.String(40), nullable=False, unique=True)
     image = db.Column(db.String(300), nullable=False)
     bio = db.Column(db.String(700), nullable=False)
@@ -166,12 +167,35 @@ class Qplace(db.Model, BaseModel):
 
 <img src="src/assets/form.png" width="900">
 
-## Future improvements
-
+## Challenges and future improvements
 
 This was the first time we experienced working solo, to build fully-functioning full-stack application.
 
+The first challenge I encountered was with the third section of the website. My plan was to make the section appear after the user will choose the place card from the section two.
 
+This is the reason why the section three is not finished yet. It took time for me to to create the setCurrentPlace function on the Homepage.js component and implement it the PlaceIndexCard.js component with the different id for each of the place.
+
+Please see below:
+
+```
+setCurrentPlace(id) {
+  console.log(id)
+  this.setState({ currentPlaceId: id }, () => goToAnchor('sectionThree', false))
+
+```
+```
+  <div>
+    <Card className="singleCard" style={{ width: '18rem', background: 'none' }} data-id={id} onClick={() => setCurrentPlace(id)}>
+      <Card.Header data-id={id}>{type.name}</Card.Header>
+      <Card.Img data-id={id} className="cardsImage" variant="top"  src={image} />
+      <Card.Body data-id={id}>
+        <Card.Title data-id={id}>{name}</Card.Title>
+        <Card data-id={id} className="address" style={{ background: 'none' }}>{city} {street} {buildingNumber} {postcode}</Card>
+      </Card.Body>
+    </Card>
+  </div>
+```
+  
 In terms of future improvements, I would like to add a search form  which is going to allow the user to perform a much more detailed search and display the places that meet the criteria of the user.
 
 I would like to add also a authorisation for the whole page, to see the content the user has to register/login.
