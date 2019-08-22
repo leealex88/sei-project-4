@@ -92,7 +92,7 @@ Once you scroll to  quiet places section, a function runs to get the data from t
 
 I used also the pagination option from Bootstrap to limit the number of the  quiet places cards visible on the page.
 
-```
+```js
 constructor() {
   super()
 
@@ -102,7 +102,8 @@ constructor() {
 ```
 ---
 
-```
+```js
+
 handlePage(e) {
   this.setState({ currentPage: e.target.textContent })
 }
@@ -112,6 +113,7 @@ render() {
   const sliceEnd = this.state.currentPage * this.state.itemsPerPage
   const numberOfPages = Math.ceil(this.props.places.length / this.state.itemsPerPage)
   const pagesArray = Array.from(Array(numberOfPages).keys()).map(x => ++x)
+
 ```
 <img src="src/assets/scrolling.png" width="900">
 
@@ -122,7 +124,8 @@ If you click on one of the cards in the quiet place listings page you are redire
 
 In this section I added ScrollableAnchor and anonymous function to filter the places with the ID.
 
-```
+```js
+
 {this.state.currentPlaceId &&
   <ScrollableAnchor id="sectionThree">
     <section className="sectionThree">
@@ -141,7 +144,7 @@ In the fourth section we can see Map with the markers for each of the Place, whe
 <img src="src/assets/map.png" width="900">
 
 Last section contain the New Place Form:
-```
+```js
 
 class Qplace(db.Model, BaseModel):
 
@@ -177,13 +180,14 @@ This is the reason why the section three is not finished yet. It took time for m
 
 Please see below:
 
-```
+```js
 setCurrentPlace(id) {
   console.log(id)
   this.setState({ currentPlaceId: id }, () => goToAnchor('sectionThree', false))
+}
 
 ```
-```
+```js
   <div>
     <Card className="singleCard" style={{ width: '18rem', background: 'none' }} data-id={id} onClick={() => setCurrentPlace(id)}>
       <Card.Header data-id={id}>{type.name}</Card.Header>
@@ -195,7 +199,7 @@ setCurrentPlace(id) {
     </Card>
   </div>
 ```
-  
+
 In terms of future improvements, I would like to add a search form  which is going to allow the user to perform a much more detailed search and display the places that meet the criteria of the user.
 
 I would like to add also a authorisation for the whole page, to see the content the user has to register/login.
