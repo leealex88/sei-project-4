@@ -3,13 +3,13 @@
 # Software Engineneering Immersive: Project 4
 
 This is my second project during the General Assembly Software Engineering Immersive course (Week 11).
-The final project was an opportunity to showcase everything we have learned so far. With the opportunity to work alone and to identify areas for self development.
+
 
 # QuietPlace
 
 I decided to create a website for people who need to find a “quiet place” to focus on their work or studies, write an essay or simply have a cup of coffee and read a book.
 I pseudocode the components  I created - drew the content and made notes of any ideas I came up with during the work.  
-I've decided to challenge myself and focus on Python during this project as I haven't had the opportunity to do so before. I really enjoyed working across back-end and front-end to create full-stack application.
+
 Other technologies used in this project were React, React-Scrollable-Anchor, CSS and Bootstrap. I used Flask to provide the API framework and I tested the endpoints using Insomnia.
 To make the project more visual, I used Mapbox API to mark each of the place on the map.
 
@@ -169,6 +169,13 @@ class Qplace(db.Model, BaseModel):
 ```
 
 <img src="src/assets/form.png" width="900">
+
+## Wins
+
+The final project was an opportunity to showcase everything we have learned so far. With the opportunity to work alone and to identify areas for self development.
+I've decided to challenge myself and focus on Python during this project as I haven't had the opportunity to do so before. I really enjoyed working across back-end and front-end and I'm very happy that I have the skills to create full-stack application.
+
+
 
 ## Challenges and future improvements
 
